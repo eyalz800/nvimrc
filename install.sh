@@ -15,4 +15,5 @@ fi
 
 cp init.vim ~/.config/nvim/init.vim
 ln -f -s ~/.vim/coc-settings.json ~/.config/nvim/coc-settings.json
+nvim -E -s -u ~/.config/nvim/init.vim +'PlugInstall' +qa
 nvim -E -s -u ~/.config/nvim/init.vim +'!python3 -m pip install --user --upgrade pynvim' +qa
